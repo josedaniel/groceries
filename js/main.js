@@ -23,7 +23,7 @@ var app = {
 
     initialize: function() {
         self.showAlert('esto es una prueba','josedaniel');
-        this.store = new LocalStorageStore(function() {
+        this.store = new MemoryStore(function() {
             self.showAlert('Store Initialized', 'Info');
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
