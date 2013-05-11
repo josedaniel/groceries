@@ -22,7 +22,7 @@ var app = {
     },
 
     initialize: function() {
-        self.showAlert('esto es una prueba');
+        self.showAlert('esto es una prueba','josedaniel');
         this.store = new LocalStorageStore(function() {
             self.showAlert('Store Initialized', 'Info');
         });
